@@ -9,7 +9,7 @@ header.header{
     width: 100%;
     height: 150px;
     margin: 0 auto;
-    min-width: 1300px;
+    /* min-width: 1300px; */
 }
 
   main{
@@ -20,7 +20,7 @@ header.header{
   }
   div.outer{
       width: 100%;
-      min-width: 1300px;
+      /* min-width: 1300px; */
       height: 600px;
       /* border: 1px solid black; */
       margin: 0 auto;
@@ -44,6 +44,7 @@ header.header{
       width: 35%;
       height: 600px;
       display: flex;
+      padding: 0 2%;
       flex-direction: column;
       align-content: center;
       align-items: center;
@@ -84,6 +85,7 @@ button.address > a{
 div.outer > div.main-two-left{
     width: 35%;
     height: 600px;
+    padding: 0 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,7 +161,7 @@ div.outer > div.main-two-left > h3{
         height: 400px;
     }
     .cont{
-        width: 29%;
+        width: 27%;
         height: 100%;
     }
 }

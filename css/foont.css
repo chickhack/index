@@ -5,7 +5,7 @@ footer{
     height: 200px;
     background-color: #2b2c2cad;
     margin-top: 20px;
-    min-width: 1300px;
+    /* min-width: 1300px; */
     margin: 0 auto;
     
 }
@@ -19,7 +19,7 @@ div.footer-address,div.footer-time,div.footer-phone,div.footer-follow{
     align-items: center;
     width: 25%;
     height: 197px;
-    
+    padding: 0 5%;   
 }
 
 div.footer-address > h2{

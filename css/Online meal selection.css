@@ -208,8 +208,8 @@ div.tabcontent{
   bottom: 0;
  }
  div.con{
-   width: 30%;
-   height: 70%;
+   width: 35%;
+   /* height: 70%; */
    /* border: 1px solid black; */
    background-color: white;
    transition: all 0.5s;
@@ -233,15 +233,16 @@ div.tabcontent{
    margin: 0;
  }
  .lightbox-top-img{
-  width: 70%;
+  width: 90%;
   height: 40%;
   /* padding: 0 auto; */
   margin: 0 auto;
  }
  .lightbox-top-img > img{
-   width: 100%;
-   height: 100%;
+   width: 70%;
+   /* height: 100%; */
    border-radius: 10px;
+   object-fit: cover;
  }
  .lightbox-bottom{
    width: 100%;
@@ -268,10 +269,10 @@ div.tabcontent{
    padding: 10px;
  }
  #text2{
-   padding: 10%;
+   padding: 10% 15%;
  }
   input#nubr{
-    width: 100px;
+    width: 10%;
     outline: none;
     border-radius: 10px;
   }
@@ -353,7 +354,7 @@ div.tabcontent{
   }
   @media (max-width:991px){
     div.con{
-    width: 50%;
+    width: 45%;
     }
   }
   @media (max-width:768px){
@@ -364,7 +365,7 @@ div.tabcontent{
       height: 100%;
     }
     div.con{
-      width: 70%;
+      width: 60%;
     }
     div#tab1right{
       height: 100%;
@@ -391,5 +392,12 @@ div.tabcontent{
     }
     div.tab1-left{
       width: 100%;
+    }
+    div.con{
+      width: 80%;
+
+    }
+    div.LOGO > span > h1 > a{
+      font-size: 22px;
     }
   }

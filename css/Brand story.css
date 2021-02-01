@@ -11,7 +11,7 @@ body{
 main{
     width: 100%;
     margin: 0 auto;
-    min-width: 1300px;
+    /* min-width: 1300px; */
     padding:0 2%;
     /* border: 1px solid black; */
 }
@@ -84,7 +84,8 @@ div.main-middle-one-right{
 div.main-middle-two{
     display: flex;
     width: 100%;
-    height: 300px;
+    /* padding-top: 50%; */
+    /* height: 300px; */
     margin-bottom: 50px;
     /* border: 1px solid blue; */
     /* flex-direction: column; */
@@ -92,7 +93,7 @@ div.main-middle-two{
 }
 div.main-middle-two-left{
     width: 50%;
-    height: 100%;
+    /* height: 100%; */
     /* border: 1px solid blue; */
     background-image: url(../img/揉麵糰.jpg);
     background-size: 100% 100%;
@@ -113,10 +114,12 @@ div.main-middle-two-left-1 > h3{
 }
 div.main-middle-two-right{
     width: 47%;
-    height: 300px;
+    padding-top: 25%;
+    /* height: 300px; */
     /* border: 1px solid black; */
     background-image: url(../img/中華麵.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 div.main-middle-three{
     display: flex;
@@ -125,44 +128,62 @@ div.main-middle-three{
 }
 div.main-middle-three-left{
     width: 28%;
-    height: 600px;
+    /* height: 450px; */
     /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 div.main-middle-three-left-1{
-    height: 300px;
+    /* height: 300px; */
+    /* padding-top: 50%; */
     width: 100%;
     /* border: 1px solid indianred; */
-    background-image: url(../img/雞蛋.jpg);
-    background-size: auto 100%;
+    /* background-image: url(../img/雞蛋.jpg); */
+    /* background-size: cover; */
+}
+div.main-middle-three-left-1 > img{
+    object-fit: cover;
+    width: 100%;
 }
 div.main-middle-three-left-2{
-    height: 300px;
+    /* height: 300px; */
+    /* padding-top: 50%; */
     width: 100%;
     /* border: 1px solid indianred; */
-    background-image: url(../img/豬肉.jpg);
+    /* background-image: url(../img/豬肉.jpg); */
     /* background-size: 100% 100%; */
-    background-size: cover;
+    /* background-size: cover; */
+}
+div.main-middle-three-left-2 > img{
+    object-fit: cover;
+    width: 100%;
 }
 div.main-middle-three-middle{
-    height: 600px;
+    /* height: 100%; */
     width: 20%;
+    /* padding-top: 40%; */
     /* border: 1px solid indianred; */
-    background-image: url(../img/日清小麥粉.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background-image: url(../img/日清小麥粉.jpg); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+}
+div.main-middle-three-middle > img{
+    width: 100%;
+    
+    object-fit: contain;
+    
 }
 div.main-middle-three-right{
     width: 47%;
-    height: 600px;
+    height: 0;
+    padding:18% 0;
     /* border: 1px solid blue; */
     background-color: rgba(188,155,106,.8);
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    /* align-content: center; */
     flex-direction: column;
     /* padding: 0 100px 0 100px; */
 }
@@ -173,6 +194,22 @@ div.main-middle-three-right{
 @media (max-width:991px){
     main{
         min-width: 100%;
+    }
+    div.main-middle-one-right{
+        padding: 0 3%;
+    }
+    div.main-middle-two-left-1{
+        padding: 0 3%;
+    }
+    div.main-middle-three-right{
+        padding: 18% 3%;
+    }
+
+}
+@media (max-width:800px){
+    div.main-middle-three-right{
+        padding: 0;
+        height: 100%;
     }
 
 }
@@ -209,11 +246,11 @@ div.main-middle-three-right{
     }   
     div.main-middle-three-left{
         width: 100%;
-        height: 500px;
+        /* height: 500px; */
     }
     div.main-middle-three-left-1{
         width: 100%;
-        height: 50%;
+        /* height: 50%; */
         background-size: cover;
         margin-bottom: 20px;
     }
@@ -222,7 +259,7 @@ div.main-middle-three-right{
     }
     div.main-middle-three-middle{
         width: 100%;
-        height: 500px;
+        /* height: 500px; */
         margin-bottom: 20px;
     }
     div.main-middle-three-right{
