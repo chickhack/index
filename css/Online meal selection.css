@@ -36,7 +36,7 @@ div.tabcontent{
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 4% 1%;
+  padding: 14px 16px;
   font-size: 20px;
   width: 20%;
 }
@@ -387,6 +387,7 @@ div.tabcontent{
   @media (max-width:578px){
     .tablink {
       font-size: 16px;
+      padding: 4% 1%;
     }
     div.tab1-left{
       width: 100%;
