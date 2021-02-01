@@ -276,7 +276,7 @@ a {
   }
   ul.nav-bar{
     display: none;
-      height: 250px;
+      height: 400px;
       width: 100%;
       flex-direction: column;
       position: sticky;
@@ -287,6 +287,9 @@ a {
     nav{
       min-width: 100%;
       z-index: 11;
+    }
+    .nav-item{
+      margin-bottom: 20px;
     }
     button.hamburger{
       display: block;
@@ -319,7 +322,7 @@ a {
       }
     ul.nav-bar{
       display: none;
-        height: 250px;
+        height: 400px;
         width: 100%;
         flex-direction: column;
         position: sticky;
