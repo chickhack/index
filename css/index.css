@@ -392,7 +392,7 @@ div.tetx > p.h3{
     }
     ul.nav-bar{
       display: none;
-        height: 250px;
+        height:400px;
         width: 100%;
         flex-direction: column;
         position: sticky;
@@ -412,6 +412,9 @@ div.tetx > p.h3{
       div.nav{
         width: 110px;
         text-align: center;
+      }
+      .nav-item{
+        margin-bottom: 20px;
       }
     /* =============旋轉圖========   */
     .carousel_wrapper{
