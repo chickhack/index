@@ -386,7 +386,7 @@ div.tabcontent{
   }
   @media (max-width:578px){
     .tablink {
-      font-size: 16px;
+      font-size: 14px;
     }
     div.tab1-left{
       width: 100%;

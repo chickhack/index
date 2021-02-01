@@ -158,4 +158,8 @@ div.outer > div.main-two-left > h3{
         width: 100%;
         height: 400px;
     }
+    .cont{
+        width: 37%;
+        height: 100%;
+    }
 }
