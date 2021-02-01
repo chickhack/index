@@ -116,10 +116,15 @@ button.text{
     }
 }
 @media (max-width:576px){
+    main{
+        height: 100%;
+        min-width: 100%;
+    }
     .cont{
         width: 100%;
     }
     .cont2{
         width: 100%;
     }
+
 }
