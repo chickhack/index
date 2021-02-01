@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/hypnotize.png);
+}
+#nav-a-5{
+    color: #b88b4a;
+}
+
+main{
+    width: 100%;
+    margin: 0 auto;
+    min-width: 1300px;
+    padding:0 2%;
+    /* border: 1px solid black; */
+}
+div.stors{
+    display: flex;
+    justify-content: space-around;
+}
+div.main-top-img{
+    background-image: url(../img/品牌故事.jpg);
+    height: 250px;
+    background-size: cover;
+}
+div.main-middle-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    /* border: 1px solid red; */
+    margin-bottom: 50px;
+}
+div.main-middle-one-left{
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/家徽.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+div.main-middle-one-middle{
+    /* border: 1px solid blueviolet; */
+    width: 20%;
+    height: 650px;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+}
+div.main-middle-one-middle-1{
+    height: 300px;
+    width: 100%;
+    /* border: 1px solid indianred; */
+    background-image: url(../img/egg1.png);
+    background-size: 100% 100%;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+div.main-middle-one-middle-2{
+    height: 300px;
+    width: 100%;
+    /* border: 1px solid springgreen; */
+    background-image: url(../img/choice牛肉.jpeg);
+    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div.main-middle-one-right{
+    width: 47%;
+    height: 100%;
+    /* border: 1px solid blue; */
+    background-color: rgba(188,155,106,.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 0 100px 0 100px; */
+    /* width: 47%;
+    height: 650px;
+    border: 1px solid blue;
+    overflow: hidden; */
+}
+div.main-middle-two{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 50px;
+    /* border: 1px solid blue; */
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+div.main-middle-two-left{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid blue; */
+    background-image: url(../img/揉麵糰.jpg);
+    background-size: 100% 100%;
+    
+}
+div.main-middle-two-left-1{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid blue; */
+    background-color: rgba(188,155,106,.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 80px 0 80px; */
+}
+div.main-middle-two-left-1 > h3{
+    line-height: 30px;
+}
+div.main-middle-two-right{
+    width: 47%;
+    height: 300px;
+    /* border: 1px solid black; */
+    background-image: url(../img/中華麵.jpg);
+    background-size: 100% 100%;
+}
+div.main-middle-three{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.main-middle-three-left{
+    width: 28%;
+    height: 600px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+div.main-middle-three-left-1{
+    height: 300px;
+    width: 100%;
+    /* border: 1px solid indianred; */
+    background-image: url(../img/雞蛋.jpg);
+    background-size: auto 100%;
+}
+div.main-middle-three-left-2{
+    height: 300px;
+    width: 100%;
+    /* border: 1px solid indianred; */
+    background-image: url(../img/豬肉.jpg);
+    /* background-size: 100% 100%; */
+    background-size: cover;
+}
+div.main-middle-three-middle{
+    height: 600px;
+    width: 20%;
+    /* border: 1px solid indianred; */
+    background-image: url(../img/日清小麥粉.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div.main-middle-three-right{
+    width: 47%;
+    height: 600px;
+    /* border: 1px solid blue; */
+    background-color: rgba(188,155,106,.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    /* padding: 0 100px 0 100px; */
+}
+/* div.main-middle-three-right > h3{
+    line-height: 30px;
+    text-align: center;
+} */
+@media (max-width:991px){
+    main{
+        min-width: 100%;
+    }
+
+}
+@media (max-width:576px){
+    div.main-middle-one{
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        height: 600px;
+    }
+    div.main-middle-one-left{
+        width: 100%;
+        height: 290px;
+    }
+    div.main-middle-one-right{
+        width: 100%;
+        height: 290px;
+    }
+    div.main-middle-two{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+    }
+    div.main-middle-two-left{
+        width: 100%;
+        height: 50%;
+    }
+    div.main-middle-two-right{
+        width: 100%;
+        height: 50%;
+    }
+    div.main-middle-three{
+        flex-direction: column-reverse;
+    }   
+    div.main-middle-three-left{
+        width: 100%;
+        height: 500px;
+    }
+    div.main-middle-three-left-1{
+        width: 100%;
+        height: 50%;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+    div.main-middle-three-left-2{
+        height: 50%;
+    }
+    div.main-middle-three-middle{
+        width: 100%;
+        height: 500px;
+        margin-bottom: 20px;
+    }
+    div.main-middle-three-right{
+        width: 100%;
+        height: 400px;
+        /* text-align: center; */
+        align-content: center;
+    }
+}

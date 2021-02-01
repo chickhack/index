@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>線上選餐</title>
+    <link rel="stylesheet" href="./css/header-nav.css">
+    <link rel="stylesheet" href="./css/hamburgers.css">
+    <link rel="stylesheet" href="./css/Online meal selection.css">
+    <!-- <link rel="stylesheet" href="./css/linghtbox.css"> -->
+</head>
+<body>
+    <header class="header">
+      <nav>
+        <div class="LOGO">
+          <a href="./index.html">
+          <img src="./img/logo2.png" alt="">
+          </a>
+          <span><h1><a href="./index.html">源式麵鋪</a></h1></span>               
+        </div>
+         
+        <div class="nav" >
+          <button class="hamburger hamburger--spin " type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+          <ul class="nav-bar">
+            <li class="nav-item">
+              <a href="./menu.html" class="nav-link" id="nav-a-1">菜單</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./onlingReservation.html" id="nav-a-2">線上訂位</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./shop.html" id="nav-a-3">店鋪情報</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./news.html" id="nav-a-4">最新消息</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Brand story.html" id="nav-a-5">品牌故事</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" id="nav-a-6">線上商店</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="a-stop">
+                  <img class="nav-stop" src="./img/購物車icon.png" alt="">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#"><img class="nav-member" src="./img/會員icon.png" alt=""></a>
+            </li>
+          </ul>
+        </div>
+      </nav>  
+    </header>
+    
+    <main>
+        <!-- <div class="tab_container"> -->
+  
+          <button class="tablink" onclick="openPage('tab1', this, 'rgba(102, 177, 241, 0.8)')" id="defaultOpen">主餐</button>
+          <button class="tablink" onclick="openPage('tab2', this, 'rgba(102, 177, 241, 0.8)')" id="top2" >小菜</button>
+          <button class="tablink" onclick="openPage('tab3', this, 'rgba(102, 177, 241, 0.8)')" id="top3">湯品</button>
+          <button class="tablink" onclick="openPage('tab4', this, 'rgba(102, 177, 241, 0.8)')" id="top4">炸物</button>
+          <button class="tablink" onclick="openPage('tab5', this, 'rgba(102, 177, 241, 0.8)')" id="top5">點餐確認</button>
+         
+            <!-- <div class="tab9contents"> -->
+            <div class="tab1-top">
+              <div id="tab1"  class="tabcontent">
+                <div class="tab1-left" >
+                    <!-- <div class="tab1-left-img">
+                        <img src="./img/五彩水餃.jpg" alt="" class="tab-img">
+                    </div> -->
+                    <div class="tab1-left-outside">
+                        <div class="img">
+                          <img src="./img/五彩水餃.jpg" class="tab-minimg">
+                        </div>
+                        
+                        <p class="h2">五彩水餃</p>
+                          
+                        <p class="p-none"> 
+                              使用天然食材製成的各色餃子皮<br>
+                               再包入特調豬肉餡
+                              你一定要嘗試看看。<br>
+                         </p>
+                         <p class="p-none">
+                              售價:60元
+                         </p>
+                          
+                    </div>
+                    <div class="tab1-left-outside">
+                      <div class="img">
+                        <img src="./img/煙燻鮭魚炒飯.jpg" class="tab-minimg">
+                      </div>
+                        
+                        <p class="h2">煙燻鮭魚炒飯</p>
+                        <p class="p-none">使用來自挪威鮭魚<br>加入蛋液後將飯粒<br>炒至粒粒分明再加上廚師的巧思後完成的餐點</p>
+                        <p class="p-none">售價:90元</p>
+                    </div>
+                    <div class="tab1-left-outside">
+                      <div class="img">
+                        <img src="./img/老虎麵.png" class="tab-minimg">
+                      </div>
+                        
+                        <p class="h2">老虎麵</p>
+                        <p class="p-none"> 
+                          利用新鮮辣椒、蒜頭、豆豉等配料製成獨特辣醬<br>喜歡吃辣的你來碗試試吧  
+                        </p>
+                        <p class="p-none">
+                          售價:80元
+                        </p>
+                    </div>
+                    <div class="tab1-left-outside">
+                      <div class="img">
+                        <img src="./img/beef.png" class="tab-minimg">
+                      </div>
+                        
+                        <p class="h2">皇家牛肉麵</p>
+                        <p class="p-none">將牛大骨熬煮八小時<br>
+                          再加入各式辛香料所
+                          形成的湯底，在佐配
+                          Choice級舒肥牛與酸菜。
+                        </p>
+                        <p class="p-none">
+                          售價:160元
+                        </p>
+                    </div>
+                    <div class="tab1-left-outside">
+                      <div class="img">
+                        <img src="./img/奢華擔仔麵1.png" class="tab-minimg">
+                      </div>
+                        
+                        <p class="h2">擔仔麵</p>
+                        <p class="p-none">台南經典擔仔麵
+                          以濃郁肉燥與蝦湯
+                          等調味，組合而成
+                          的經典美食。</p>
+                        <p class="p-none">售價:60元</p>
+                    </div>
+                    
+                    <!-- <figure class="img">
+                      <img src="./img/老虎麵.png" class="tab-minimg">
+                      <figcaption>老虎麵</figcaption>
+                    </figure>
+                    <figure class="img">
+                      <img src="./img/beef.png" class="tab-minimg">
+                      <figcaption>皇家牛肉麵</figcaption>
+                    </figure>
+                    <figure class="img">
+                      <img src="./img/奢華擔仔麵1.png" class="tab-minimg">
+                      <figcaption>擔仔麵</figcaption>
+                    </figure>
+                    <figure class="img">
+                      <img src="./img/煙燻鮭魚炒飯.jpg" class="tab-minimg">
+                      <figcaption>煙燻鮭魚炒飯</figcaption>
+                    </figure> -->
+                  </div>   
+              </div>      
+                    
+                    
+              
+                  <div id="tab1right">
+                    <!-- <button id="right-cols">X</button> -->
+                    <h1>目前已選擇餐點</h1>
+                    <div id="confirm">
+                      
+                    </div>
+                    
+                    
+                    <!-- <button class="one"><a href="#">+1份</a></button> -->
+                    <div>目前小計:<span id="allmoney">0</span></div>
+                    <!-- <button id="address"><a href="#top5">確認點餐</a> </button> -->
+                    <button type="button" id="address"  onclick="open1Page('tab5', 'top5','rgba(102, 177, 241, 0.8)')">確認點餐</button>
+
+                  </div>
+               
+             
+            <!-- <div class="tab1-top"> -->
+              <div id="tab2" class="tabcontent">
+                  <div class="tab1-left">
+                      <div class="tab1-left-outside">
+                          <div class="img">
+                            <img src="./img/干貝.jpeg" class="tab-minimg">
+                          </div>
+                      
+                              <p class="h2">煎干貝</p>
+                        <p class="p-none">選用北海道生食等級文火煎至金黃保有其精華</p>
+                        <p class="p-none">售價:60元</p>
+
+                        </div>
+                      <div class="tab1-left-outside">
+                          <div class="img">
+                              <img src="./img/烤麩.png" class="tab-minimg">
+                          </div>
+                    
+                              <p class="h2">烤麩</p>
+                              <p class="p-none">典型的寧式小菜，鬆軟的烤麩吸收飽滿的湯汁，清爽的口感中伴隨烤麩特有的嚼勁，完美呈現上海人的家常美味。</p>
+                              <p class="p-none">售價:40元</p>
+                        </div>
+                      <div class="tab1-left-outside">
+                          <div class="img">
+                              <img src="./img/炒青菜.jpg" class="tab-minimg">
+                          </div>
+                  
+                              <p class="h2">炒青菜</p>
+                              <p class="p-none">在鍋中以少許油加入蔥、蒜片爆香，，並加入碎肉、魚乾、蝦皮、香菇增加香氣與層次。</p>
+                              <p class="p-none">售價:50元</p>
+
+                        </div>
+                        <div class="tab1-left-outside">
+                          <div class="img">
+                              <img src="./img/皮蛋豆腐.jpg" class="tab-minimg">
+                          </div>
+                  
+                              <p class="h2">皮蛋豆腐</p>
+                              <p class="p-none">選用台東池上水
+                                製作而成的豆腐
+                                再搭配上無鉛
+                                松花蛋與辛香料。</p>
+                              <p class="p-none">售價:50元</p>
+
+                        </div>
+                        <div class="tab1-left-outside">
+                          <div class="img">
+                              <img src="./img/什景小菜.png" class="tab-minimg">
+                          </div>
+                  
+                              <p class="h2">什錦小菜</p>
+                              <p class="p-none">清脆的豆芽菜，配上軟潤香滑的冬粉、海帶與豆乾絲，口感層次豐富爽口，讓您吃出猶如夏天的滋味。</p>
+                              <p class="p-none">售價:40元</p>
+
+                        </div>
+                    <!-- <div class="tab1-left-img">
+                        <img src="./img/干貝.jpeg" alt="" class="tab-img">
+                    </div>
+                    <figure class="img">
+                      <img src="./img/干貝.jpeg" class="tab-minimg">
+                      <figcaption>煎干貝</figcaption>
+                    </figure>
+                    <figure class="img">
+                      <img src="./img/炒青菜.jpg" class="tab-minimg">
+                      <figcaption>炒青菜</figcaption>
+                    </figure>
+                    <figure class="img">
+                      <img src="./img/烤麩.png" class="tab-minimg">
+                      <figcaption>烤麩</figcaption>
+                    </figure>
+                    <figure class="img">
+                      <img src="./img/皮蛋豆腐.jpg" class="tab-minimg">
+                      <figcaption>皮蛋豆腐</figcaption>
+                    </figure>
+                    <figure class="img">
+                      <img src="./img/什景小菜.png" class="tab-minimg">
+                      <figcaption>什錦小菜</figcaption>
+                    </figure> -->
+                  </div>
+                </div>
+                    
+                
+                   
+                    
+                  <!-- <div class="tab1-right">
+                    <h1>五彩水餃</h1>
+                    <h3>使用天然食材製成的各色餃子皮
+                       <br>
+                       再包入特調豬肉餡<br>
+                       你一定要嘗試看看。
+                    </h3>
+                    <h2>售價:一份六十元</h2>
+                    <button class="one"><a href="#">+1份</a></button>
+                    <!<button type="button" id="address"  onclick="open1Page('tab3', 'top3','rgba(102, 177, 241, 0.8)')">換點湯品</button> -->
+                  <!-- </div> -->
+            <!-- </div>   -->
+              <div id="tab3" class="tabcontent">
+                  <div class="tab1-left">
+                    <div class="tab1-left-outside">
+                      <div class="img">
+                          <img src="./img/干貝羅菠湯.jpg" class="tab-minimg">
+                      </div>
+              
+                          <p class="h2">干貝羅菠湯</p>
+                          <p class="p-none">將乾貨干貝泡水釋放出原本的好滋味並融入湯裡再加上白蘿蔔鮮甜。</p>
+                          <p class="p-none">售價:60元</p>
+
+                    </div>
+                    <div class="tab1-left-outside">
+                      <div class="img">
+                          <img src="./img/番茄豆腐湯.png" class="tab-minimg">
+                      </div>
+              
+                          <p class="h2">番茄豆腐湯</p>
+                          <p class="p-none">越是簡單的料理，越能呈現食材的原味，富含青菜、筍片、蕃茄、豆腐、蛋花等新鮮配料，激盪出的家常風味最是甘美。</p>
+                          <p class="p-none">售價:50元</p>
+
+                    </div>
+                    <div class="tab1-left-outside">
+                      <div class="img">
+                          <img src="./img/老火湯.jpg" class="tab-minimg">
+                      </div>
+              
+                          <p class="h2">老火湯</p>
+                          <p class="p-none">我們將各種蔬菜、水果、肉類、大骨與中藥熬上數小時而成喝下去滋身補益。</p>
+                          <p class="p-none">售價:60元</p>
+
+                    </div>
+                    <div class="tab1-left-outside">
+                      <div class="img">
+                          <img src="./img/貢丸湯.jpg" class="tab-minimg">
+                      </div>
+              
+                          <p class="h2">貢丸湯</p>
+                          <p class="p-none">使用新竹Q彈貢丸與熬煮數小時大骨湯再撒上西洋芹點綴。</p>
+                          <p class="p-none">售價:40元</p>
+
+                    </div>
+                    <div class="tab1-left-outside">
+                      <div class="img">
+                          <img src="./img/酸辣湯.png" class="tab-minimg">
+                      </div>
+              
+                          <p class="h2">酸辣湯</p>
+                          <p class="p-none">用料豐富的酸辣湯，豆腐與木耳細切如絲，芡汁調配得宜喝來濃稠又不失淡雅風味。師傅只做適度調味，待湯品上桌後，客人可依喜好，再添加醋及辣油調合成符合自己口味的湯品。</p>
+                          <p class="p-none">售價:四十元</p>
+
+                    </div>
+                    <!-- <div class="tab1-left-img">
+                       <img src="./img/干貝羅菠湯.jpg" alt="" class="tab-img">
+                    </div>
+                    <figure class="img">
+                      <img src="./img/干貝羅菠湯.jpg" class="tab-minimg">
+                      <figcaption>干貝蘿蔔湯</figcaption>
+                    </figure>
+                    <figure class="img">
+                      <img src="./img/老火湯.jpg" class="tab-minimg">
+                      <figcaption>老火湯</figcaption>
+                    </figure>
+                    <figure class="img">
+                      <img src="./img/貢丸湯.jpg" class="tab-minimg">
+                      <figcaption>貢丸湯</figcaption>
+                    </figure>
+                    <figure class="img">
+                      <img src="./img/酸辣湯.png" class="tab-minimg">
+                      <figcaption>酸辣湯</figcaption>
+                    </figure>
+                    <figure class="img">
+                      <img src="./img/番茄豆腐湯.png" class="tab-minimg">
+                      <figcaption>番茄豆腐湯</figcaption>
+                    </figure>
+                    
+                  </div>
+                  <div class="tab1-right">
+                    <h1>五彩水餃</h1>
+                    <h3>使用天然食材製成的各色餃子皮
+                       <br>
+                       再包入特調豬肉餡<br>
+                       你一定要嘗試看看。
+                    </h3>
+                    <h2>售價:一份六十元</h2>
+                    <button class="one"><a href="#">+1份</a></button>
+                    <button type="button" id="address"  onclick="open1Page('tab4', 'top4','rgba(102, 177, 241, 0.8)')">換點炸物</button>
+                  </div> -->
+                  </div>
+              </div>
+              <div id="tab4" class="tabcontent">
+                  <div class="tab1-left">
+                    <div class="tab1-left-outside">
+                      <div class="img">
+                          <img src="./img/炸牛蒡.jpg" class="tab-minimg">
+                      </div>
+              
+                          <p class="h2">炸牛蒡</p>
+                          <p class="p-none">鮮甜酥脆，非常適合下酒，是飯後小酌聊天時的極品美味。</p>
+                          <p class="p-none">售價:30元</p>
+
+                    </div>
+                    <div class="tab1-left-outside">
+                      <div class="img">
+                          <img src="./img/炸蝦.jpg" class="tab-minimg">
+                      </div>
+              
+                          <p class="h2">炸蝦</p>
+                          <p class="p-none">使用天使紅蝦與日式炸衣麵糊經過高溫油炸，外衣酥脆，裡頭蝦肉軟嫩多汁，沾上蜂蜜芥末或是番茄醬，滋味更棒</p>
+                          <p class="p-none">售價:一份兩尾50元</p>
+
+                    </div>
+                    <div class="tab1-left-outside">
+                      <div class="img">
+                          <img src="./img/炸豆腐.jpg" class="tab-minimg">
+                      </div>
+              
+                          <p class="h2">炸豆腐</p>
+                          <p class="p-none">選用台東池上水製作而成的豆腐，炸到外表酥脆簡單好吃的料理。</p>
+                          <p class="p-none">售價:40元</p>
+
+                    </div>
+                    <div class="tab1-left-outside">
+                      <div class="img">
+                          <img src="./img/炸飯糰.jpg" class="tab-minimg">
+                      </div>
+              
+                          <p class="h2">炸飯糰</p>
+                          <p class="p-none">傳統日式炸飯糰先將飯糰下鍋油炸在塗上特製醬汁後烤製而成。</p>
+                          <p class="p-none">售價:40元</p>
+
+                    </div>
+                    <div class="tab1-left-outside">
+                      <div class="img">
+                          <img src="./img/炸牛肉.jpg" class="tab-minimg">
+                      </div>
+              
+                          <p class="h2">炸牛肉</p>
+                          <p class="p-none">取薄片牛排，用拍打、槌打或叉子戳以軟化斷筋。浸在加蛋的麵糊下淺鍋煎炸至金黃香脆。</p>
+                          <p class="p-none">售價:80元</p>
+
+                    </div>
+                    <!-- <div class="tab1-left-img">
+                        <img src="./img/蝦子.jpg" alt="" class="tab-img">
+                    </div>
+                    <figure class="img">
+                      <img src="./img/蝦子.jpg" class="tab-minimg">
+                      <figcaption>炸蝦子</figcaption>
+                    </figure>
+                    <figure class="img">
+                      <img src="./img/炸牛蒡.jpg" class="tab-minimg">
+                      <figcaption>炸牛蒡</figcaption>
+                    </figure>
+                    <figure class="img">
+                      <img src="./img/炸飯糰.jpg" class="tab-minimg">
+                      <figcaption>炸飯糰</figcaption>
+                    </figure>
+                    <figure class="img">
+                      <img src="./img/炸牛肉.jpg" class="tab-minimg">
+                      <figcaption>炸牛肉</figcaption>
+                    </figure>
+                    <figure class="img">
+                      <img src="./img/炸豆腐.jpg" class="tab-minimg">
+                      <figcaption>炸豆腐</figcaption>
+                    </figure> -->
+                    
+                   
+                    
+                    
+                    
+                  </div>
+                  <!-- <div class="tab1-right">
+                    <h1>五彩水餃</h1>
+                    <h3>使用天然食材製成的各色餃子皮
+                          <br>
+                          再包入特調豬肉餡<br>
+                          你一定要嘗試看看。
+                      </h3>
+                      <h2>售價:一份六十元</h2>
+                      <button class="one"><a href="#">+1份</a></button>
+                      <button type="button" id="address"  onclick="open1Page('tab5', 'top5','rgba(102, 177, 241, 0.8)')">點餐確認</button>
+                  </div> -->
+              </div>
+              
+              <div id="tab5" class="tabcontent">
+                  <div id="tab5-cococo">
+                    <p class="h2">訂位日期: 一月三十日</p>
+                    <p class="h2">人數: 三人</p>
+                    <p class="h2">姓名: 王曉</p> 
+                    <p class="h2">電話: 0980239483</p>  
+                    <div id="confirm1">
+
+                    </div>
+                    <div id="tab5-allmoney11">總價:<span id="tab5-allmoney">0</span></div>
+                    <button id="over"><a href="#">完成訂位</a></button>
+                  </div>
+              </div>
+            <!-- </div> -->
+          </div> 
+        <!-- </div> -->
+      <div class="lightbox" id="openbox">
+        <div class="con">
+          <button type="button" class="lightbox-close"><a href="#">X</a></button>
+          <div class="lightbox-top" >
+            <p class="h2" id="lightbox-p">牛肉麵</p>
+            <div class="lightbox-top-img">
+              <img src="./img/beef.png" alt="" id="imgs22">
+            </div>
+            <p class="h3" id="text2">牛肉麵好吃</p>
+            <p id="lineBoxMoney"></p>
+          </div>
+          <div class="lightbox-bottom">
+            <label for="nubr">數量:</label>
+            <input type="button" value="+" id="plus">
+            <input id="nubr" type="text" min="1" max="10" >
+            <input type="button" value="-" id="less">
+            <button type="submit" class="lightbox-button-yes"><a href="#">加入點餐</a></button>
+          </div>
+          
+        </div>
+      </div>
+    </main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/online meal selection.js"></script>
+    <script src="./js/oling.js"></script>
+      <script src="./js/navRWD.js"></script>
+      <script src="./js/hamburger.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+@font-face{
+  font-family: "font1";
+  src: url(../font/wt021.ttf);
+}
+@font-face{
+  font-family: "font2";
+  src: url(../font/wt020.TTF);
+}
+*{
+  box-sizing: border-box;
+}
+h1{
+  font-family: "font1";
+  font-weight: 700;
+}
+h2{
+  font-family: "font2";
+  font-size: 20px;
+  font-weight: 700;
+}
+h3{
+  font-family: "font2";
+  font-size: 16px;
+}
+p.h2{
+  font-size:20px;
+  font-weight: 700px;
+  font-family: 'font2';
+}
+p.h3{
+  font-family: "font2";
+  font-size: 16px;
+  line-height: 35px;
+}
+body{
+  margin: 0;
+}
+  header.header{
+      width: 100%;
+      min-width: 1300px;
+      height: 125px;
+      margin: 0 auto;
+      /* border: 1px solid black; */
+  }
+  nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+button.hamburger{
+  display: none;
+  outline: none;
+  position:sticky;
+  top: 0;
+  right: 0;
+  margin: 0;
+}
+ul.nav-bar{
+    margin: 0 0 0 auto;
+    padding: 0;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+    width: 950px;
+    height: 70px;
+    background-color: #2b2c2cad;
+}
+li.nav-item{
+    list-style: none;
+    font-size: 20px;
+    /* display: flex; */
+}
+li.nav-item > a.nav-link{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    font-family: "font2";
+}
+li.nav-item > a.nav-link:hover{
+      /* color:rgba(102, 177, 241, 0.8); */
+      color: #5299d3;
+  }
+ 
+  div.LOGO > a > img{
+      width: 100px;
+      height: 100px;
+      
+  }
+
+  div.LOGO > span{
+      margin-left: 20px;
+  }
+  
+  div.LOGO > span > h1 > a{
+ 
+      font-size: 32px;
+      color: black;
+      text-decoration: none;
+  }
+  div.LOGO{
+      display: inline-flex;
+      /* position: absolute; */
+      transform: translateX(3.4%) translateY(10%);
+      /* width: 400px; */
+  }
+  li.nav-item > a > img{
+    width: 37px;
+    
+  }
+    
+  a {
+      text-decoration: none;
+    }
+    @media(max-width:991px){
+      header.header{
+        min-width: 100%;
+      }
+      ul.nav-bar{
+        display: none;
+          height: 250px;
+          width: 100%;
+          flex-direction: column;
+          position: sticky;
+          top: 10%;
+          right: 0;
+          z-index: 20;
+        }
+        nav{
+          min-width: 100%;
+          z-index: 11;
+        }
+        button.hamburger{
+          display: block;
+          margin: 0 auto;
+          
+        }
+        div.nav{
+          width: 110px;
+          text-align: center;
+        }
+    }
+    @media screen and (min-width:993px){
+      ul.nav-bar{
+        display: flex!important;
+      }
+    }

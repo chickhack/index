@@ -1,0 +1,394 @@
+body{
+    background-image: url(../img/hypnotize.png);
+}
+h1,h2,h3{
+    text-align: center;
+    width: 100%;
+}
+main{
+    width: 100%;
+    /* min-width: 1300px; */
+    margin: 0 auto;
+    /* display:flex; */
+
+}
+p.p-none{
+  display: none;
+}
+div.tab1-top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 650px;
+}
+div.tabcontent{
+  display: none;
+  border-top: 1px solid black;
+  /* width: 1500px; */
+  width: 100%;
+  height: 100%;
+}
+.tablink {
+  background-color:#2b2c2cad;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 20px;
+  width: 20%;
+}
+
+.tablink:hover {
+  /* background-color: rgb(102 241 158 / 45%); */
+  background-color:  rgba(102, 177, 241, 0.8);
+}
+
+
+ 
+  div.tab1-left{
+      border: 1px solid black;
+      width: 70%;
+      height: 100%;
+      display: inline-block;
+      padding: 1% 2% 1% 2%;
+      margin: 0;
+      font-size: 0px;
+      /* justify-content: center; */
+      /* align-items: center; */
+      /* text-align: center; */
+      /* margin: 0; */
+  }
+  div.tab1-left-outside{
+    width: 48%;
+    height: 160px;
+    margin: 1%;
+    /* padding: 2%; */
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid #b88b4a; */
+    background-color: #dfa95f;
+    border-radius: 100px;
+    transition: all 0.5s;
+  }
+  div.tab1-left-outside:hover{
+    background-color: rgba(102, 177, 241, 0.8);
+    transform: translateY(-8px) translateX(-5px);
+    cursor: pointer;
+  }
+  div.img{
+    width: 150px;
+    height: 150px;
+    border-radius: 70px;
+    overflow: hidden;
+  }
+  div#tab1right{
+      border: 1px solid black;
+      height: 650px;
+      width: 30%;
+      margin: 0px;
+      /* position: relative; */
+      display: flex; 
+      flex-direction: column;
+      position: absolute;
+      justify-content: space-around;
+      align-items: center;
+      right: 0;
+      
+      top: 180px;
+     text-align: center;
+  }
+  div#tab1right> h1,h2,h3{
+      margin: 50px auto;
+      /* width: 300px; */
+
+  }
+ 
+  img.tab-minimg{
+      
+      width: 100%;
+      height: 100%;
+  }
+
+  button#address{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #af1b3f;
+    outline: none;
+    /* position: absolute; */
+    color: white;
+    bottom: 20%;
+    left: 30%;
+    border: none;
+ }
+ button#address:hover{
+   cursor: pointer;
+   
+ }
+ /* button.address > a{
+     color: white;
+     text-decoration: none;
+     padding: 10px 40px 10px 40px;
+ } */
+ button.one{
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 30px;
+  background-color:rgba(102, 177, 241, 0.8);
+  outline: none;
+  position: absolute;
+  color: white;
+  bottom: 40%;
+  font-size: 16px;
+  left: 42%;
+ }
+ div#tab5{
+   justify-content: center;
+   align-items: center;
+ }
+ button#over{
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #af1b3f;
+  outline: none;
+  margin-top: 50px;
+  border: none;
+ }
+ button#over:hover{
+   cursor: pointer;
+ }
+ button#over > a{
+   color: white;
+   padding: 15px 40px 15px 40px;
+ }
+#tab5-cococo{
+  display: flex;
+  flex-direction: column;
+  
+  /* align-content: ; */
+  justify-content: space-around;
+  align-items: center;
+  height: 70%;
+}
+#tab5-allmoney11{
+  text-align: center;
+  font-size: 18px;
+}
+ /* ================lightBox區===================== */
+ div.lightbox{
+   width: 0%;
+   height: 0%;
+   top: 50%;
+   /* bottom: 0; */
+   left: 50%;
+   /* right: 0; */
+   position: fixed;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   transition: 0.5s ease;
+   overflow: hidden;
+   opacity: 0;
+   /* background-color: white; */
+ }
+ div.lightbox:target{
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+ }
+ div.con{
+   width: 30%;
+   height: 70%;
+   /* border: 1px solid black; */
+   background-color: white;
+   transition: all 0.5s;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   border-radius: 10px;
+ }
+ .lightbox-top{
+   width: 100%;
+   height: 90%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   /* border: 1px solid black; */
+ }
+ p.h3{
+   padding: 5%;
+   margin: 0;
+ }
+ .lightbox-top-img{
+  width: 70%;
+  height: 40%;
+  /* padding: 0 auto; */
+  margin: 0 auto;
+ }
+ .lightbox-top-img > img{
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+ }
+ .lightbox-bottom{
+   width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ button.lightbox-close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  outline: none;
+  border-radius: 0px 0 0px 10px;
+  border: none;
+  background-color: #5299D3;
+  font-size: 20px;
+  padding: 0;
+  }
+ button.lightbox-close > a{
+   padding: 10px;
+ }
+ #text2{
+   padding: 10%;
+ }
+  input#nubr{
+    width: 100px;
+    outline: none;
+    border-radius: 10px;
+  }
+  button.lightbox-button-yes{
+    width: 110px;
+    outline: none;
+    border-radius: 10px;
+    background-color: #af1b3f;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    height: 30px;
+  }
+  button.lightbox-button-yes > a{
+    color:white;
+    padding: 5px 22px 5px 22px;
+  }
+  #plus{
+    width: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #5299D3;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+  }
+  #less{
+    width: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #5299D3;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  /* =============右邊新增菜品的============= */
+  button.btnDel{
+    width: 70px;
+    height: 25px;
+    outline: none;
+   cursor: pointer;
+    border-style: none;
+    border-radius: 30px;
+    border: none;
+    /* background-color: #2b2c2cad; */
+    /* background-color: white; */
+    background-color: #dfa95f;
+    color: white;
+    transition: all 0.8s;
+  }
+  button.btnDel:hover{
+    background-color:#5299D3 ;
+    color: black;
+  }
+  tr{
+    width: 400px;
+    /* border: 1px solid black; */
+  }
+  tr > td{
+    /* border: 1px solid black; */
+    padding:5px 3px 5px 3px;
+    /* width: 70px; */
+    font-size: 18px;
+    
+  }
+  #right-cols{
+    position: absolute;
+    left: 0;
+    transform: translateX(-25px);
+  }
+
+  /* ========RWD區============== */
+  @media (max-width:1100px){
+    div.con{
+      width: 50%;
+    }
+  }
+  @media (max-width:991px){
+    div.con{
+    width: 50%;
+    }
+  }
+  @media (max-width:768px){
+    div.tab1-left-outside{
+      width: 100%;
+    }
+    div.tab1-top{
+      height: 100%;
+    }
+    div.con{
+      width: 70%;
+    }
+    div#tab1right{
+      height: 100%;
+    }
+    div.tab1-left{
+      /* width: 100%; */
+      border: 0;
+      margin: 0 auto;
+    }
+    div#tab1right{
+      /* position: fixed; */
+      /* top: 0; */
+      display: none!important;
+      /* width: 50%; */
+      /* background-color: wheat; */
+      /* overflow-y: scroll; */
+   /* transform: translateX(0px); */
+    } 
+  }
+  @media (max-width:578px){
+    .tablink {
+      font-size: 16px;
+    }
+    div.tab1-left{
+      width: 100%;
+    }
+  }

@@ -1,0 +1,86 @@
+body{
+    background-image: url(../img/hypnotize.png);
+}
+#nav-a-4{
+    color: #b88b4a;
+}
+div.main{
+    width: 100%;
+    min-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+div.move-left{
+border: 3px solid black;
+width: 100%;
+/* height: 200px; */
+margin: 0 0 30px 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+div.move-left:hover{
+    transform: translateY(-40px);
+}
+div.move-left > .move-left-circle{
+    /* border: 1px solid black; */
+    width: 150px;
+    height: 150px;
+    border-radius: 80px;
+    margin:0 auto;
+}
+div.move-left > .move-left-circle > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 80px;
+}
+div.move-left > .move-left-text{
+    width: 70%;
+    /* border: 1px solid black; */
+    height: 100%;
+
+}
+div.move-right{
+border: 3px solid black;
+width: 100%;
+/* height: 200px; */
+/* max-height: 100%; */
+margin: 0 0 30px 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+div.move-right > .move-right-text{
+    width: 70%;
+    /* border: 1px solid black; */
+    height: 100%; 
+    /* padding: 0 0 0 80px; */
+}
+div.move-right > .move-right-text > h2{
+margin-left: 80px;
+}
+div.move-right > .move-right-text > p.h3{
+    /* margin:0 auto; */
+    padding-left: 8%;
+}
+div.move-right > .move-right-circle{
+    /* border: 1px solid black; */
+    width: 150px;
+    height: 150px;
+    border-radius: 80px;
+    margin:0 auto;
+}
+div.move-right > .move-right-circle > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 80px;
+}
+@media (max-width:991px){
+    div.main{
+        min-width: 100%;
+    }
+}

@@ -1,0 +1,85 @@
+footer{
+    /* position: relative; */
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-color: #2b2c2cad;
+    margin-top: 20px;
+    min-width: 1300px;
+    margin: 0 auto;
+    
+}
+
+div.footer-address,div.footer-time,div.footer-phone,div.footer-follow{
+    /* position: absolute; */
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: flex-start;
+    flex-direction:column;
+    align-items: center;
+    width: 25%;
+    height: 197px;
+    
+}
+
+div.footer-address > h2{
+    color: white;
+    text-align: center;
+    /* margin-top: 20px; */
+}
+div.footer-address > p.h3{
+    color: white;
+    /* margin-left: 30%; */
+    /* line-height: 1.5; */
+}
+div.footer-time > h2{
+   color: white;
+   /* margin-top: 5%; */
+    text-align: center;
+}
+div.footer-time > p.h3{
+   color: white;
+    /* margin-left: 5%; */
+    /* line-height: 1.5; */
+}
+div.footer-phone > h2{
+   color: white;
+    text-align: center;
+    /* margin-top: 5%; */
+}
+div.footer-phone > p.h3{
+   color: white;
+    /* margin-left: 30%; */
+    /* line-height: 1.5; */
+}
+div.footer-follow > h2{
+   color: white;
+   text-align: center;
+   /* margin-top: 20px; */
+}
+/* div.footer-follow > span{ */
+   /* margin-left: 32%; */
+/* } */
+div.footer-follow > span > a > img{
+   width: 40px;
+   height: 40px;
+   margin: 0 10px;
+}
+@media (max-width:991px){
+    footer{
+        min-width: 100%;
+    }
+}
+@media(max-width:576px){
+    footer{
+        min-width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    div.footer-address,div.footer-time,div.footer-phone,div.footer-follow{
+        width: 100%;
+        height: 100%;
+        /* flex-direction: row; */
+    }
+
+}

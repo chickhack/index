@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>線上訂位</title>
+    <link rel="stylesheet" href="./css/header-nav.css">
+    <link rel="stylesheet" href="./css/foont.css">
+    <link rel="stylesheet" href="./css/hamburgers.css">
+    <link rel="stylesheet" href="./css/linghtbox.css">
+    <link rel="stylesheet" href="./css/onlingReservation.css">
+    <!-- <link rel="stylesheet" href="./css/date.css"> -->
+</head>
+<body>
+    <header class="header">
+      <nav>
+        <div class="LOGO">
+          <a href="./index.html">
+          <img src="./img/logo2.png" alt="">
+          </a>
+          <span><h1><a href="./index.html">源式麵鋪</a></h1></span>               
+        </div>
+         
+        <div class="nav" >
+          <button class="hamburger hamburger--spin " type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+          <ul class="nav-bar">
+            <li class="nav-item">
+              <a href="./menu.html" class="nav-link" id="nav-a-1">菜單</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./onlingReservation.html" id="nav-a-2">線上訂位</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./shop.html" id="nav-a-3">店鋪情報</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./news.html" id="nav-a-4">最新消息</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Brand story.html" id="nav-a-5">品牌故事</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" id="nav-a-6">線上商店</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="a-stop">
+                  <img class="nav-stop" src="./img/購物車icon.png" alt="">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#"><img class="nav-member" src="./img/會員icon.png" alt=""></a>
+            </li>
+          </ul>
+        </div>
+ </nav>
+    </header>
+    <main>
+        <div class="main">
+            <h1>線上訂位</h1>
+          <form action="#" method="get">
+                <!-- <div id="date">
+                    <span class="date">日期:</span>
+                    <input type="text"  placeholder="請選擇日期" id='inputdate' />
+                
+                </div> -->
+                <label for="tdate">日期:</label>
+                <input type="date" id="tdate" placeholder="請輸入日期">
+                  <!-- <div>
+                    
+                  </div> -->
+                <!-- </template>
+                <script>
+                export default {
+                  
+                }
+                </script>
+                <style lang="">
+                  
+                </style>> -->
+              <div>
+                <span class="time">時間:</span>
+                  <select name="time" class="time">
+                      <option value=""disabled selected hidden>請選擇時間</option>
+                      <option value="11">早上11點</option>
+                      <option value="12">中午12點</option>
+                      <option value="13">下午1點</option>
+                      <option value="14">下午2點</option>
+                      <option value="15">下午3點</option>
+                      <option value="16">下午4點</option>
+                      <option value="17">下午5點</option>
+                      <option value="18">晚上6點</option>
+                      <option value="19">晚上7點</option>
+                      <option value="20">晚上8點</option>
+                  </select>
+              </div>
+            <div>
+              
+                <span class="people">人數:</span>
+                
+                  <select name="people" class="people">
+                    <option value="" disabled selected hidden>請選擇人數</option>
+                    <option value="1">一人</option>
+                    <option value="2">兩人</option>
+                    <option value="3">三人</option>
+                    <option value="4">四人</option>
+                    <option value="5~">五以上</option>
+                  </select>
+            
+            </div>
+            <div class="name">
+                
+                   <label for="name">姓名:</label>
+                  <input id="name" type="text" placeholder="請輸入姓名">
+                
+            </div>
+            <div class="phone">
+                
+                  <label for="phone">手機:</label>
+                  <input type="text" id="phone" placeholder="請輸入手機號碼">
+                
+            </div>
+            <div>
+
+              <button type="submit" class="text1"><a href="#openbox">填完送出</a></button>
+              <!-- <button class="text"><a href="./Online meal selection.html">繼續訂餐</a></button> -->
+            </div>
+          </form>
+            
+        </div>
+        <div class="lightbox" id="openbox">
+          <div class="cont" id="openbox-cont">
+            <h1>訂位確認</h1>
+            <p class="h2">姓名:黃曉明</p>
+            <p class="h2">日期:2021/3/21</p>
+            <p class="h2">時間:中午12點</p>
+            <p class="h2">人數:兩人</p>
+            <p class="h2">手機號碼:0980111222</p>
+            <button type="submit" class="lightbox-button-yes"><a href="#openbox2">確定</a></button>
+            <button type="button" class="lightbox-close"><a href="#">X</a></button>
+          </div>
+        </div>
+        <div class="lightbox" id="openbox2">
+          <div class="cont2">
+            
+            <p class="h2">謝謝您的訂位我們期待當天的相見</p>
+            <p class="h2">請問您要先行選擇當天的餐點嗎?</p>
+            <button type="button" class="lightbox-button-yes"><a href="./Online meal selection.html">選餐</a></button>
+            <button type="button" class="lightbox-close"><a href="#">X</a></button>
+          </div>
+        </div>
+        <!-- <section>
+          <a href="#notice" class="button">Click Me</a>
+        </section>
+        <div class="lightbox-target" id="notice">
+          <div class="content">
+            Hello world
+          </div>
+          <a href="#" class="lightbox-close"></a>
+        </div> -->
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+      <script src="./js/navRWD.js"></script>
+      <script src="./js/hamburger.js"></script>
+</body>
+</html>

@@ -1,0 +1,747 @@
+@font-face{
+    font-family: "font1";
+    src: url(../font/wt021.ttf);
+  }
+  @font-face{
+    font-family: "font2";
+    src: url(../font/wt020.TTF);
+  }
+  *{
+    box-sizing: border-box;
+  }
+h1{
+    font-family: "font1";
+    font-weight: 700;
+}
+h2{
+    font-family: "font2";
+    font-size: 20px;
+    font-weight: 700;
+}
+h3{
+    font-family: "font2";
+    font-size: 16px;
+}
+p.h3{
+    font-family: "font2";
+    font-size: 16px;
+    line-height: 35px;
+}
+body{
+    margin: 0;
+}
+/* ==========================header區========================= */
+header.header{
+    margin: 0 auto;
+    width: 100%;
+    height: 768px;
+    /* background-image: url(../img/background-image.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: 100% 100%;  */
+}
+button.hamburger{
+    display: none;
+    outline: none;
+    position:sticky;
+    top: 0;
+    right: 0;
+    margin: 0;
+  }
+
+span.ipo{
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    
+}
+span.ipo > h2{
+    text-shadow: 2px -1px 1px  white;
+    
+}
+div.onetwo{
+    width: 100%;
+    min-width: 1300px;
+    height: 768px;
+    background-image:url(../img/background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto; 
+} 
+nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+ul.nav-bar{
+    margin: 0 0 0 auto;
+    padding: 0;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+    width: 950px;
+    height: 70px;
+    background-color: #2b2c2cad;
+}
+li.nav-item{
+    list-style: none;
+    font-size: 20px;
+    /* display: flex; */
+}
+li.nav-item > a.nav-link{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    font-family: "font2";
+}
+li.nav-item > a.nav-link:hover{
+      /* color:rgba(102, 177, 241, 0.8); */
+      color: #5299d3;
+  }
+ 
+  div.LOGO > a > img{
+      width: 100px;
+      height: 100px;
+      
+  }
+
+  div.LOGO > span{
+      margin-left: 20px;
+  }
+  
+  div.LOGO > span > h1 > a{
+ 
+      font-size: 32px;
+      color: black;
+      text-decoration: none;
+  }
+  div.LOGO{
+      display: inline-flex;
+      /* position: absolute; */
+      transform: translateX(3.4%) translateY(10%);
+      /* width: 400px; */
+  }
+  li.nav-item > a > img{
+    width: 37px;
+    
+  }
+  /* ========================main區=============================== */
+  main{
+      width: 100%;
+      /* padding: 0 auto; */
+      background-image: url(../img/hypnotize.png);
+  }
+  div.main{
+    height: 768px;
+    width: 1300px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    position: relative;
+    background-image: url(../img/hypnotize.png);
+  }
+  div.main > h1{
+      margin-left: 5%;
+      
+  }
+ div.main-course{
+    /* border: 1px solid black; */
+    position: absolute;
+    width: 470px;
+    height: 320px;
+    left: 12%;
+    top: 10%;
+    transform: translateY(-3%);
+    font-size: 0px;
+    overflow: hidden;
+ }
+ div.main-course > a > img{
+     width: 100%;
+     height: 100%;
+     transition: all .2s;
+ }
+ div.main-course > a > img:hover{
+    transform: scale(1.1);
+ }
+ div.main-course > a > h2{
+    position: absolute;
+    color: white;
+    top: 2%;
+    left: 2%;
+    z-index: 1;
+}
+ div.main-sidedish{
+    /* display: inline-block; */
+    position: absolute;
+    /* border: 1px solid black; */
+    width: 470px;
+    height: 320px;
+    right: 12%;
+    top: 3%;
+    /* transform: translateX(5%) translateY(20%); */
+    overflow: hidden;
+ }
+ div.main-sidedish > a > img{
+     width: 100%;
+     height: 100%;
+     transition: all .2s;
+ }
+ div.main-sidedish > a > img:hover{
+     transform: scale(1.1);
+ }
+ div.main-sidedish > a > h2{
+    position: absolute;
+    
+    color: black;
+    top: 2%;
+    left: 2%;
+    z-index: 1;
+}
+ div.main-friedfood {
+    position: absolute;
+    /* margin-left: 2%; */
+    /* border: 1px solid black; */
+    width: 470px;
+    height: 320px;
+    bottom: 0%;
+    left: 15%;
+    /* transform: translateX(15%) translateY(153%); */
+    overflow: hidden;
+ }
+ div.main-friedfood > a > img{
+     width: 100%;
+     height: 100%;
+     transition: all 0.2s;
+ }
+ div.main-friedfood > a > img:hover{
+     transform: scale(1.1);
+ }
+ div.main-friedfood > a > h2{
+    position: absolute;
+    color: black;
+    top: 2%;
+    left: 2%;
+    z-index: 1;
+}
+ div.main-soup{
+    /* display: inline-block; */
+    /* border: 1px solid black; */
+    width: 470px;
+    height: 320px;
+    position: absolute;
+    
+    right: 9%;
+    bottom: 5%;
+    overflow: hidden;
+ }
+ div.main-soup > a > img{
+     width: 100%;
+     height: 100%;
+     transition: all 0.2s;
+ }div.main-soup > a > img:hover{
+     transform: scale(1.1);
+ }
+ div.main-soup > a > h2{
+     position: absolute;
+     color: white;
+     top: 2%;
+     left: 2%;
+     z-index: 1;
+ }
+
+ /* =========================線上訂位===================== */
+ div.onling_1{
+     width: 100%;
+     margin: 40px 0 40px 0;
+     background-repeat: no-repeat;
+     background-image: url(../img/線上訂位背景圖.jpg);
+     background-size: 100% 100%;
+ }
+ div.onling{
+   margin: 0 auto;
+    height: 150px;
+    /* width: 1300px; */
+    
+     
+ }
+ form.onling{
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    height: 150px;
+    width: 100%;
+    /* margin: 30px auto 30px auto; */
+ }
+ input.date{
+     width: 200px;
+     height: 30px;
+     padding-left: 50px;
+     outline: none;
+     border-radius: 10px;
+     border: none;
+     font-size: 16px;
+ }
+ 
+ select.time {
+     width: 200px;
+     /* margin: 0px 40px 0 40px; */
+     padding: 0 0 0 50px;
+     border-radius: 10px;
+     height: 30px;
+     border: 2px;
+    /* position: absolute; */
+    /* left: 40%; */
+    /* top: 50%; */
+    font-size: 16px;
+    outline: none;
+ }
+ select.people{
+    padding: 0 0 0 50px;
+    width: 200px;
+    border-radius: 10px;
+    height: 30px;
+    border: 2px;
+    outline: none;
+    font-size: 16px;
+ }
+ button.text{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    text-align:center;
+    background-color: #af1b3f;
+    color: white;
+    font-size: 16px;
+    border: none;
+    /* margin-left: 50px; */
+    /* font-size: 20px; */
+    /* position: absolute; */
+    /* left: 80%; */
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+    outline: none;
+    /* box-shadow: 0 3px 5px black; */
+ }
+/* ==========================店鋪情報======================== */
+ 
+    div.address{
+        width: 100%;
+     height: 768px;
+     margin: 0 auto;
+     /* border: 1px solid black; */
+     display: inline-flex;
+     min-width: 1300px;
+ }
+ div.tetx{
+     /* border: 1px solid black; */
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content:left;
+    align-content: flex-start;
+    width: 40%;
+    height: 768px;
+    position: relative;
+ }
+ div.tetx > h1{
+     margin:0 0 0 7%;
+     
+    }
+    div.tetx > button.address{
+    width: 160px;
+    height: 40px;
+    border-radius: 20px;
+    /* text-align:center; */
+    background-color:  #af1b3f;
+    border: none;
+    color: white;
+    position: absolute;
+    /* align-items: center; */
+    /* justify-content: center; */
+    outline: none;
+    left: 50%;
+    bottom: 40%;
+    transform: translateX(-50%);
+    /* box-shadow: 0 3px 5px black; */
+    font-size: 16px;
+}
+button.address > a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px 10px 40px;
+}
+div.tetx > p.h3{
+    margin-left: 7%;
+     /* line-height: 2; */
+ }
+ div.baimg{
+     background-image: url(../img/店門.jpg);
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     align-items: flex-start;
+    width: 60%;
+    height: 768px;
+ }
+/* =========================991pxRWD==============  */
+ @media(max-width:991px){
+     /* =======導覽列======= */
+    header.header{
+      min-width: 100%;
+      
+    }
+    ul.nav-bar{
+      display: none;
+        height: 250px;
+        width: 100%;
+        flex-direction: column;
+        position: sticky;
+        top: 10%;
+        right: 0;
+        z-index: 20;
+      }
+      nav{
+        min-width: 100%;
+        z-index: 11;
+      }
+      button.hamburger{
+        display: block;
+        margin: 0 auto;
+        
+      }
+      div.nav{
+        width: 110px;
+        text-align: center;
+      }
+    /* =============旋轉圖========   */
+    .carousel_wrapper{
+        margin: 100px auto 0 300px;
+        perspective: 1800px;
+    }
+    
+    div.onetwo{
+        min-width: 100%;
+        /* background-size: */
+    }
+/* ==================main菜單================= */
+    div.main{
+        width: 100%;
+        display: inline-block;
+        /* height: 70%; */
+        position: relative;
+    }
+    div.main img{
+        object-fit: cover;
+    }
+    div.main-course{
+        position: static;
+        transform: none;
+        width: 48%;
+        display: inline-block;
+    }
+    
+    div.main-course > a > h2{
+        position: absolute;
+        top:10%
+        /* color: black; */
+    }
+    div.main-sidedish{
+        position: static;
+        display: inline-block;
+        width: 48%;
+    }
+    div.main-sidedish > a > h2{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+    }
+    div.main-friedfood {
+        position: static;
+        display: inline-block;
+        width: 48%;
+    }
+    div.main-friedfood > a > h2{
+        position: absolute;
+        top: 52%;
+    }
+    div.main-soup {
+        position: static;
+        display: inline-block;
+        width: 48%;
+    }
+    div.main-soup > a > h2{
+        position: absolute;
+        top: 52%;
+        left: 50%;
+    }
+    /* ===============線上訂位=========== */
+    /* form.onling h1{
+        font-size: 24px;
+    } */
+    input.date{
+        width: 15%;
+        height: 60px;
+        border-radius: 100px;
+        padding: 0 0 0 2%;
+        
+    }
+    select.time {
+        width: 15%;
+        height: 60px;
+        border-radius: 100px;
+        padding: 0 0 0 2%;
+    }
+    select.people{
+        width: 15%;
+        height: 60px;
+        border-radius: 100px;
+        padding: 0 0 0 2%;
+    }
+    button.text{
+        width: 15%;
+        height: 60px;
+        border-radius: 100px;
+    }
+    /* ========店鋪情報============= */
+    div.baimg{
+        background-size: cover;
+    }
+    div.address{
+        min-width: 100%;
+    }
+  }
+  @media screen and (min-width:993px){
+    ul.nav-bar{
+      display: flex!important;
+    }
+  }
+  @media screen and (max-width:768px){
+     /* ==========旋轉圖=========== */
+     .carousel_wrapper{
+        display: none;
+    }
+    /* ================輪播圖=============== */
+    .container{
+        display: block;
+    }
+  }
+  @media screen and (max-width:576px){
+     
+    
+    /* ==================線上訂位============= */
+    div.onling,div.onling1{
+        height: 450px;
+        
+    }
+    form.onling{
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        flex-wrap: wrap;
+        height: 400px;
+    }
+    input.date{
+        width: 50%;
+        height: 60px;
+        border-radius: 50px;
+        padding: 0 0 0 15%;
+        
+    }
+    select.time {
+        width: 50%;
+        height: 60px;
+        border-radius: 50px;
+        padding: 0 0 0 15%;
+    }
+    select.people{
+        width: 50%;
+        height: 60px;
+        border-radius: 500px;
+        padding: 0 0 0 15%;
+    }
+    button.text{
+        width: 150px;
+        height: 60px;
+        border-radius: 100px;
+    }
+    /* ==========菜單========= */
+    div.main{
+        width: 100%;
+        display: inline-block;
+        /* height: 70%; */
+        position: relative;
+    }
+    div.main img{
+        object-fit: cover;
+    }
+    div.main-course{
+        position: static;
+        transform: none;
+        width: 100%;
+        display: inline-block;
+    }
+    
+    div.main-course > a > h2{
+        position: absolute;
+        top:10%
+        /* color: black; */
+    }
+    div.main-sidedish{
+        position: static;
+        display: inline-block;
+        width: 100%;
+    }
+    div.main-sidedish > a > h2{
+        position: absolute;
+        top: 52%;
+        left: 2%;
+    }
+    div.main-friedfood {
+        position: static;
+        display: inline-block;
+        width: 100%;
+    }
+    div.main-friedfood > a > h2{
+        position: absolute;
+        top: 95%;
+        
+    }
+    div.main-soup {
+        position: static;
+        display: inline-block;
+        width: 100%;
+    }
+    div.main-soup > a > h2{
+        position: absolute;
+        top: 137%;
+        left: 2%;
+    }
+    /* =============店鋪情報============ */
+    div.address{
+        /* border: 3px solid black; */
+        /* height: 800px; */
+        display: block;
+    }
+    div.tetx{
+        width: 100%;
+        height: 50%;
+    }
+    div.tetx > button.address{
+        bottom: 5%;
+    }
+    div.baimg{
+        width: 100%;
+        height: 50%;
+    }
+  }
+ /* ==============================底層============================== */
+ /* footer{
+ 
+     width: 100%;
+     height: 200px;
+     background-color: #2b2c2cad;
+     margin-top: 20px;
+    
+ }
+ div.footer{
+     width: 1300px;
+     height: 200px;
+     display: flex;
+     justify-content: space-between;
+ }
+ div.footer-address,div.footer-time,div.footer-phone,div.footer-follow{
+    
+     width: 25%;
+     height: 197px;
+     
+ }
+
+ div.footer-address > h2{
+     color: white;
+     text-align: center;
+     margin-top: 20px;
+ }
+ div.footer-address > p.h3{
+     color: white;
+     margin-left: 30%;
+   
+ }
+ div.footer-time > h2{
+    color: white;
+    margin-top: 20px;
+     text-align: center;
+ }
+ div.footer-time > p.h3{
+    color: white;
+     margin-left: 30%;
+    
+ }
+ div.footer-phone > h2{
+    color: white;
+     text-align: center;
+     margin-top: 20px;
+ }
+ div.footer-phone > p.h3{
+    color: white;
+     margin-left: 30%; */
+
+ /* }
+ div.footer-follow > h2{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+ }
+ div.footer-follow > span{
+    margin-left: 32%;
+ }
+ div.footer-follow > span > a > img{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+ }
+ @media(max-width:991px){
+    header.header{
+      min-width: 100%;
+    }
+    ul.nav-bar{
+      display: none;
+        height: 250px;
+        width: 100%;
+        flex-direction: column;
+        position: sticky;
+        top: 10%;
+        right: 0;
+        z-index: 20;
+      }
+      nav{
+        min-width: 100%;
+        z-index: 11;
+      }
+      button.hamburger{
+        display: block;
+        margin: 0 auto;
+        
+      }
+      div.nav{
+        width: 110px;
+        text-align: center;
+      }
+  }
+  @media (max-width:991px){
+    footer{
+        min-width: 991px;
+    }
+}
+@media(max-width:576px){
+    footer{
+        min-width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    div.footer-address,div.footer-time,div.footer-phone,div.footer-follow{
+        width: 100%;
+        height: 100%;
+
+    }
+
+} */
