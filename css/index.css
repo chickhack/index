@@ -1,10 +1,10 @@
 @font-face{
     font-family: "font1";
-    src: url(../font/wt021.ttf);
+    src: url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
   }
   @font-face{
     font-family: "font2";
-    src: url(../font/wt020.TTF);
+    src: url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+TC:wght@500&display=swap');
   }
   *{
     box-sizing: border-box;

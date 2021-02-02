@@ -1,10 +1,10 @@
 @font-face{
   font-family: "font1";
-  src: url(../font/wt021.ttf);
+  src: url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
 }
 @font-face{
   font-family: "font2";
-  src: url(../font/wt020.TTF);
+  src: url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+TC:wght@500&display=swap');
 }
 *{
   box-sizing: border-box;
@@ -17,7 +17,7 @@ h1{
   }
   h2{
     font-family: "font2";
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 700;
   }
   h3{
@@ -237,7 +237,7 @@ a {
   }
   div.tetx_1{
     width: 20%;
-    padding-top: 8.2%;
+    padding-top: 6%;
     border-left: 1px solid black;
     /* display: flex; */
     /* line-height: 20%; */

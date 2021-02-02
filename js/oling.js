@@ -47,14 +47,24 @@ $('#plus').click(function(){
 		+	'<td>單價'+money+'</td>'
 		+	'<td>' + '<button class="btnDel" >刪除</button>' 
 		+ 	' </td> </tr>');
-		$('#confirm1').append(joinData);
+		if(nur == 0){
+			return;
+		}else{
+
+			$('#confirm1').append(joinData);
+		}
 		var joinData1 = $('<tr>' 
 		+ 	'<td>' +title+ '</td>' 
 		+ 	'<td>數量:' +nur+ '</td>'
 		+	'<td>單價'+money+'</td>'
 		+	'<td>' + '<button class="btnDel" >刪除</button>' 
 		+ 	' </td> </tr>');
-		$('#confirm').append(joinData1);
+		if(nur == 0){
+			return;
+		}else{
+
+			$('#confirm').append(joinData1);
+		}
 
 		// $('').append(joinData);
 		// let io = $('<input type="button" value="刪除" id="btn12" >');

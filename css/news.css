@@ -6,7 +6,7 @@ body{
 }
 div.main{
     width: 100%;
-    min-width: 1300px;
+    /* min-width: 1300px; */
     margin: 0 auto;
     display: flex;
     /* border: 1px solid black; */
@@ -40,8 +40,9 @@ div.move-left > .move-left-circle > img{
 }
 div.move-left > .move-left-text{
     width: 70%;
+    padding: 0 3%;
     /* border: 1px solid black; */
-    height: 100%;
+    /* height: 100%; */
 
 }
 div.move-right{
@@ -56,14 +57,15 @@ align-items: center;
 }
 div.move-right > .move-right-text{
     width: 70%;
+    /* padding: 0 3%; */
     /* border: 1px solid black; */
-    height: 100%; 
+    /* height: 100%;  */
     /* padding: 0 0 0 80px; */
 }
-div.move-right > .move-right-text > h2{
+.move-right-text > h2{
 margin-left: 80px;
 }
-div.move-right > .move-right-text > p.h3{
+.move-right-text > p.h3{
     /* margin:0 auto; */
     padding-left: 8%;
 }
