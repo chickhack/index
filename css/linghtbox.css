@@ -46,6 +46,7 @@ button.lightbox-button-yes{
   font-size: 16px;
   color: white;
     transition: all 0.5s;
+    margin-bottom: 15px;
 }
 button.lightbox-button-yes:hover{
   transform: translateX(-0px) translateY(-5px);
@@ -109,20 +110,23 @@ button.lightbox-close > a{
   bottom: 0;
   left: 0;
   right: 0;
-  width: 50%;
+  width: 40%;
   height: 70%;
-  text-align: center;
-  background: #fff;
+  /* text-align: left; */
+  background-image: url(../img/hypnotize.png);
   margin: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
   transition:  0.3s ease;
-  /* min-width: 1300px; */
+  
   /* 預設寬高為 0，觸發 :target 後，利用動畫效果展開寬與高 */		
   /* max-width: 0%; */
   /* max-height: 0%; */
+}
+#linebox-cont-text{
+  padding-left: 8%;
 }
 /* #openbox-cont:target{
   width: 100%;
@@ -138,7 +142,7 @@ button.lightbox-close > a{
   width: 30%;
   height: 40%;
   text-align: center;
-  background: #fff;
+  background-image: url(../img/hypnotize.png);
   margin: auto;
   display: flex;
   justify-content: space-around;
@@ -146,4 +150,5 @@ button.lightbox-close > a{
   flex-direction: column;
   max-width: 100%;
   max-height: 100%;
+  padding: 0 8%;
 }

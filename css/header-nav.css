@@ -70,7 +70,8 @@ ul.nav-bar{
 li.nav-item{
     list-style: none;
     font-size: 20px;
-    /* display: flex; */
+    /* width: 100%; */
+    margin-left: 5px;
 }
 li.nav-item > a.nav-link{
     text-decoration: none;
@@ -126,6 +127,9 @@ li.nav-item > a.nav-link:hover{
           top: 10%;
           right: 0;
           z-index: 20;
+        }
+        li.nav-item{
+          width: 100%;
         }
         nav{
           min-width: 100%;
