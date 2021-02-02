@@ -272,7 +272,8 @@ div.tabcontent{
    padding: 10% 15%;
  }
   input#nubr{
-    width: 10%;
+    width: 15%;
+    padding-left: 6%;
     outline: none;
     border-radius: 10px;
   }

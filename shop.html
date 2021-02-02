@@ -159,11 +159,6 @@ TweenMax.from('.address',0.5,{
   repeat:-1,
   yoyo:true,
   delay:1,
-  // width:'50',
-  // scale:0.5,
-  // top:'70%',
-  // right:'50%',
-  
 });
 
 
@@ -177,7 +172,7 @@ TweenMax.from('.address',0.5,{
   new ScrollMagic.Scene({
     triggerElement:'#move2',
     triggerHook:0.7,
-    
+    reverse:false,
   }).setTween(move21).addTo(roller);
   
   
