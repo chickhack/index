@@ -6,9 +6,8 @@ $('.tab1-left-outside').click(function(){
 	 let lineBoxTitle = $(this).children().eq(1).text();
 	 let lineBoxText = $(this).children().eq(2).text();
 	 let lineBoxMoney =$(this).children().eq(3).text();
-	//  window.alert(lineBoxMoney);
-	//  alert(text);
-	$('#nubr').val(0);
+	
+	//  尋找點選的圖片文案去做替換
 	$(location).prop('href','#openbox');
 	$('#imgs22').attr('src',imgs);
 	$('#lightbox-p').text(lineBoxTitle);
@@ -47,11 +46,12 @@ $('#plus').click(function(){
 		+	'<td>單價'+money+'</td>'
 		+	'<td>' + '<button class="btnDel" >刪除</button>' 
 		+ 	' </td> </tr>');
+		// 如果使用者數量0就不能新增
 		if(nur == 0){
 			return;
 		}else{
 
-			$('#confirm1').append(joinData);
+			$('#confirm12').append(joinData);
 		}
 		var joinData1 = $('<tr>' 
 		+ 	'<td>' +title+ '</td>' 
@@ -63,35 +63,42 @@ $('#plus').click(function(){
 			return;
 		}else{
 
-			$('#confirm').append(joinData1);
+			$('#confirm11').append(joinData1);
 		}
-
-		// $('').append(joinData);
-		// let io = $('<input type="button" value="刪除" id="btn12" >');
-		// $('#confirm').addend(io);
-
 		// =============刪除按鈕並且減去總價==============
 		
-		$('.btnDel').click(function(){
+		$('.btnDel').unbind('click').click(function(){
 			// 撈出按下去當前的商品數量
 			var delTd = $(this).parent().parent().children().eq(1).text().match(/\d+/);
-			
+	
 			// 撈出按下去當前的商品價格
 			var delTd2 = $(this).parent().parent().children().eq(2).text().match(/\d+/);
-			
+	
 			sum1 = delTd * delTd2;
 			allSum -= sum1;
 			$('#allmoney').text(allSum);
 			$('#tab5-allmoney').text(allSum);
-			$(this).parent().parent().remove();
+
+			// =========刪除========
+
+			// document.getElementById('confirm12').removeChild(this.parentNode.parentNode);
+			// alert($(this).parent().parent().nodeName);
+			// document.getElementById('confirm12').removeChild();
+			// $(this).parent().parent().remove();
+
+			
+			var ind	=  $(this).parent().parent().index(); //尋找索引值
+			alert(ind);
+			$('#confirm11 tr').eq(ind).remove();
+			$('#confirm12 tr').eq(ind).remove();
+
 		});
 
-// =====================tab5============
-	
 
 
-		// =======新增物品計算總價=======
-		var trs= $('#confirm tr');
+		
+		// =======計算新增菜單目前總價=======
+		var trs= $('#confirm11 tr');
 		var sum1 = 0;
 		var allSum = 0;
 		for(var x=0;x<trs.length;x++){
@@ -105,8 +112,8 @@ $('#plus').click(function(){
 		}
 		$('#allmoney').text(allSum);
 		
-
-		var trs1= $('#confirm1 tr');
+		// =====================tab5============
+		var trs1= $('#confirm12 tr');
 		var sum12 = 0;
 		var allSum1 = 0;
 		for(var y=0;y<trs1.length;y++){
@@ -119,16 +126,10 @@ $('#plus').click(function(){
 			allSum1 += sum12;
 		}
 		$('#tab5-allmoney').text(allSum1);
-
-
-
-
 	});
-	
-	
-
 
 });
+
 
 // function del(){
 // 	$(this).remove();
@@ -149,3 +150,4 @@ $('#plus').click(function(){
 		// imgs[i].onclick=showLarge;
 	// }
 // }
+
