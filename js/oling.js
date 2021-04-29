@@ -88,7 +88,7 @@ $('#plus').click(function(){
 
 			
 			var ind	=  $(this).parent().parent().index(); //尋找索引值
-			alert(ind);
+			// alert(ind);
 			$('#confirm11 tr').eq(ind).remove();
 			$('#confirm12 tr').eq(ind).remove();
 
