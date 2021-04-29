@@ -135,6 +135,7 @@ li.nav-item > a.nav-link:hover{
   }
   div.main{
     height: 768px;
+    max-width: 1500px;
     width: 100%;
     margin: 0 auto;
     /* border: 1px solid black; */
@@ -262,7 +263,7 @@ li.nav-item > a.nav-link:hover{
    margin: 0 auto;
     height: 150px;
     /* width: 1300px; */
-    
+    max-width: 1500px;
      
  }
  form.onling{
@@ -331,8 +332,9 @@ li.nav-item > a.nav-link:hover{
      height: 768px;
      margin: 0 auto;
      /* border: 1px solid black; */
-     display: inline-flex;
+     display: flex;
      /* min-width: 1300px; */
+     max-width: 1500px;
      
  }
  div.tetx{
